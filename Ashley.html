@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Ashley
+    </title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #80Cbc4, #A7DBD8, #E0F7FA);
+            text-align: center;
+            font-family: Shadows Into Light;
+        }
+        h1{
+            color: #333;
+            font-size: 40px;
+            font-weight: bolder;
+            line-height: 2;
+            border: pink, 30px;
+        }
+        img {
+            margin: 20px auto;
+            display: block;
+            border-radius: 100px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+            width: 28%;
+            border: pink;
+            
+        }
+        button {
+            font-size: 28px;
+            background-color: pink;
+            color: black;
+            padding: 20px 45px;
+            border-radius: 80px;
+            border: 3px solid black;
+            margin: 20px auto;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+        }
+        button:hover {
+            color: pink;
+            background-color: black;
+            transition: all 200ms ease-in-out;
+            border-color: pink;
+        }
+        .bio {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+            text-indent: 2em;
+        }
+        h3{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ashley Alexander</h1>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/137/981/original/cuteashley.jpeg?1723092518" 
+    alt="Cute Ashley">
+    <div class="bio">
+        <p>This is my amazing friend Ashley.
+             She is single and looking for her life partner.
+              <strong>
+                Ashley is driven, adventurous, and kind.
+              </strong> 
+               She is currently serving in the Air Force and aspires to become a therapist.
+                She is super sweet and always prioritizes the needs of her loved ones.
+        </p>
+        <p>Ashley loves camping, traveling, and especially going to raves.
+             She has a rescue dog that she adores and spends a lot of time with.
+              If you're someone who enjoys these things and values a loving and adventurous partner, she might just be the one for you!
+        </p>
+    </div>
+    <h2>
+        <em>
+            Apply below to become one of her suitors.
+        </em>
+    </h2>
+    <button id="applyButton">Apply</button>
+
+    <script>
+        function button(){ 
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email?");
+            if (name && email) {
+                alert("Thank you " + name + ", the application has been sent to your email.");
+            } else {
+                alert("Please provide both your name and email.");
+            }
+        };
+        addEventListener("click", button)
+    </script>
+</body>
+</html>
